@@ -335,22 +335,33 @@
                 line.style.left = `${i * 15}px`;
                 backgroundAnimation.appendChild(line);
             }
-        
+
             anime({
                 targets: '.line',
-                translateY: [
-                    { value: '100vh', duration: 5000 }, // Увеличиваем время для замедления
-                    { value: '-100vh', duration: 5000 }
+                translateX: [
+                    { value: '100vw', duration: 3000 },
+                    { value: '-100vw', duration: 3000 }
                 ],
-                rotate: {
-                    value: '1turn',
-                    easing: 'easeInOutSine',
-                    duration: 6000
-                },
                 loop: true,
                 easing: 'easeInOutSine',
-                delay: anime.stagger(200) // Увеличиваем задержку
+                delay: anime.stagger(150)
             });
+            
+            // anime({
+            //     targets: '.line',
+            //     translateY: [
+            //         { value: '100vh', duration: 5000 }, // Увеличиваем время для замедления
+            //         { value: '-100vh', duration: 5000 }
+            //     ],
+            //     rotate: {
+            //         value: '1turn',
+            //         easing: 'easeInOutSine',
+            //         duration: 6000
+            //     },
+            //     loop: true,
+            //     easing: 'easeInOutSine',
+            //     delay: anime.stagger(200) // Увеличиваем задержку
+            // });
         </script>
     </body>
 </html>
