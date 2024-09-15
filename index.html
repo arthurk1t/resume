@@ -1,80 +1,88 @@
 <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-            <meta name="description" content="" />
-            <meta name="author" content="" />
-            <title>Resume - Start Bootstrap Theme</title>
-            <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-            <!-- Font Awesome icons (free version)-->
-            <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-            <!-- Google fonts-->
-            <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-            <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-            <!-- Core theme CSS (includes Bootstrap)-->
-            <link href="css/styles.css" rel="stylesheet" />
-        
-            <!-- Styles for the animation -->
-            <style>
-                #background-animation {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: -1; /* Обеспечиваем размещение под контентом */
-                    pointer-events: none; /* Исключаем взаимодействие с анимацией */
-                }
-        
-                .line {
-                    position: absolute;
-                    width: 2px;
-                    height: 100vh;
-                    background-color: var(--bs-black); /* Цвет из вашего CSS */
-                }
-            </style>
-        </head>
-        <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Arthur Kassunke</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                </ul>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Styles for the animation -->
+    <style>
+        #background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Обеспечиваем размещение под контентом */
+            pointer-events: none; /* Исключаем взаимодействие с анимацией */
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.1);
+            pointer-events: none; /* Исключаем взаимодействие с кругами */
+        }
+
+        /* Старая анимация линий */
+        .line {
+            position: absolute;
+            width: 2px;
+            height: 100vh;
+            background-color: var(--bs-black); /* Цвет из вашего CSS */
+        }
+    </style>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Arthur Kassunke</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Arthur
+                <span class="text-primary">Kassunke</span>
+            </h1>
+            <div class="subheading mb-5">
+                Lviv ● Ukraine ● +38 (093) 000-12-91 ●
+                <a href="mailto:akassunke101@gmail.com">akassunke101@gmail.com</a>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Arthur
-                        <span class="text-primary">Kassunke</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Lviv ● Ukraine ● +38 (093) 000-12-91 ●
-                        <a href="mailto:akassunke101@gmail.com">akassunke101@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">Experienced game developer. Programmer.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/dumsurfer/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/arthurk1t"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://t.me/@ddumsurfer"><i class="fab fa-telegram"></i></a>
-                        <a class="social-icon" href="https://www.facebook.com/profile.php?id=100006704837603"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </section>
+            <p class="lead mb-5">Experienced game developer. Programmer.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/dumsurfer/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/arthurk1t"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="https://t.me/@ddumsurfer"><i class="fab fa-telegram"></i></a>
+                <a class="social-icon" href="https://www.facebook.com/profile.php?id=100006704837603"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
     <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
@@ -318,50 +326,77 @@
 <!--            </section>-->
         </div>
 
-        <!-- Background animation -->
-        <div id="background-animation"></div>
-        
-        <!-- Bootstrap core JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS -->
-        <script src="js/scripts.js"></script>
-        <!-- Anime.js library -->
-        <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-        <script>
-            const backgroundAnimation = document.getElementById('background-animation');
-            for (let i = 0; i < 100; i++) {
-                let line = document.createElement('div');
-                line.className = 'line';
-                line.style.left = `${i * 15}px`;
-                backgroundAnimation.appendChild(line);
-            }
+<!-- Background animation -->
+<div id="background-animation"></div>
 
-            anime({
-                targets: '.line',
-                translateX: [
-                    { value: '100vw', duration: 3000 },
-                    { value: '-100vw', duration: 3000 }
-                ],
-                loop: true,
-                easing: 'easeInOutSine',
-                delay: anime.stagger(150)
-            });
-            
-            // anime({
-            //     targets: '.line',
-            //     translateY: [
-            //         { value: '100vh', duration: 5000 }, // Увеличиваем время для замедления
-            //         { value: '-100vh', duration: 5000 }
-            //     ],
-            //     rotate: {
-            //         value: '1turn',
-            //         easing: 'easeInOutSine',
-            //         duration: 6000
-            //     },
-            //     loop: true,
-            //     easing: 'easeInOutSine',
-            //     delay: anime.stagger(200) // Увеличиваем задержку
-            // });
-        </script>
-    </body>
+<!-- Bootstrap core JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS -->
+<script src="js/scripts.js"></script>
+<!-- Anime.js library -->
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+<!-- Новый скрипт для кругов -->
+<script>
+    function createRandomCircle() {
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+        document.body.appendChild(circle);
+
+        const size = Math.random() * 100 + 50; // Размер от 50px до 150px
+        circle.style.width = `${size}px`;
+        circle.style.height = `${size}px`;
+
+        const noCirclesZones = Array.from(document.querySelectorAll('.resume-section'));
+        let x, y;
+
+        do {
+            x = Math.random() * window.innerWidth;
+            y = Math.random() * window.innerHeight;
+        } while (noCirclesZones.some(zone => {
+            const rect = zone.getBoundingClientRect();
+            return x > rect.left && x < rect.right && y > rect.top && y < rect.bottom;
+        }));
+
+        circle.style.left = `${x}px`;
+        circle.style.top = `${y}px`;
+
+        anime({
+            targets: circle,
+            scale: [0, 1],
+            opacity: [1, 0],
+            easing: 'easeInOutSine',
+            duration: 3000,
+            complete: () => circle.remove()
+        });
+    }
+
+    // Запуск анимации каждые 1000 мс
+    setInterval(createRandomCircle, 1000);
+</script>
+
+<!-- Старая анимация линий (закомментирована) -->
+<!-- 
+<script>
+    const backgroundAnimation = document.getElementById('background-animation');
+    for (let i = 0; i < 100; i++) {
+        let line = document.createElement('div');
+        line.className = 'line';
+        line.style.left = `${i * 15}px`;
+        backgroundAnimation.appendChild(line);
+    }
+
+    anime({
+        targets: '.line',
+        translateX: [
+            { value: '100vw', duration: 3000 },
+            { value: '-100vw', duration: 3000 }
+        ],
+        loop: true,
+        easing: 'easeInOutSine',
+        delay: anime.stagger(150)
+    });
+</script>
+-->
+</body>
 </html>
