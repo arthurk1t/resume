@@ -10975,3 +10975,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#contactForm .form-group {
+  margin-bottom: 1rem;
+}
+
+#contactForm .form-control {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#contactForm button {
+  display: block;
+  width: 100%;
+}
